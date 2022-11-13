@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <div class="container-todo">
+        
+        <header class="header">
+            <h1 class="header-title">ToDo List</h1>
+        </header>
+        
+        <div class=" container-input">
+            <form class="search-container" id="formSearch">
+                <input type="text" name="search" class="input input-search" id="search" placeholder="type to search " >
+                <button type="submit" class="btn-search" id="btn-search"><ion-icon name="search-circle-outline"></ion-icon></button>
+            </form>
+            <div class="btns-search">
+                <button class="btn-input left" id="all">All</button>
+                <button class="btn-input center">Active</button>
+                <button class="btn-input right">Done</button>
+            </div>
+        </div>
+        
+        <div class="all-task" id="all-task">
+            <div class="task">
+                <div class="task-name">
+                    <input type="checkbox">
+                    <p class="task-title">coffee</p>
+                </div>
+                <div class="container-task">
+                    <button class="btn-task btn-edit" id='btn-edit'><ion-icon name="pencil-outline"></ion-icon></button>
+                    <button class="btn-task btn-remove" id="btn-removeOne"><ion-icon name="trash-outline"></ion-icon></button>
+                </div>
+            </div>
+            <!-- <div class="empty" id="empty">
+                <h3 class="empty-title" id="empty-title">Empty</h3>
+            </div> -->
+        </div>
+        
+        <form class="container-input " id="formTask">
+            <input type="text" name="new-task" class="input input-new-tesk"  id="new-task" placeholder="What needs to be done">
+            <button type="submit" class="btn-add-task">Add task</button>
+        </form>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/index.js" type="module"></script>
+    
+</body>
+</html>
